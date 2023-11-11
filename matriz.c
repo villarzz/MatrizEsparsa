@@ -20,7 +20,7 @@ Matriz criaMatriz(int linhas, int colunas) {
 // Função para inserir um elemento na matriz
 void insereElemento(Matriz* A, int linha, int coluna, int valor) {
     if (linha < 0 || linha >= A->linhas || coluna < 0 || coluna >= A->colunas) {
-        printf("Erro: Índices fora dos limites.\n");
+        printf("Erro: Indices fora dos limites.\n");
         return;
     }
 
@@ -62,7 +62,7 @@ void imprimeMatriz(Matriz A) {
 // Função para ler a matriz de um arquivo
 Matriz leMatriz() {
     int linhas, colunas;
-    printf("Informe o número de linhas e colunas da matriz: ");
+    printf("Informe o numero de linhas e colunas da matriz: ");
     scanf("%d %d", &linhas, &colunas);
 
     Matriz novaMatriz = criaMatriz(linhas, colunas);
@@ -80,7 +80,7 @@ Matriz leMatriz() {
 // Função para somar duas matrizes
 Matriz somaMatrizes(Matriz A, Matriz B) {
     if (A.linhas != B.linhas || A.colunas != B.colunas) {
-        printf("Erro: As matrizes não têm o mesmo tamanho.\n");
+        printf("Erro: As matrizes nao tem o mesmo tamanho.\n");
         exit(1);
     }
 
@@ -119,7 +119,7 @@ Matriz somaMatrizes(Matriz A, Matriz B) {
 // Função para multiplicar duas matrizes
 Matriz multiplicaMatrizes(Matriz A, Matriz B) {
     if (A.colunas != B.linhas) {
-        printf("Erro: Número de colunas de A não é igual ao número de linhas de B.\n");
+        printf("Erro: Numero de colunas de A nao e igual ao numero de linhas de B.\n");
         exit(1);
     }
 
