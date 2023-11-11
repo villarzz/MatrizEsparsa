@@ -1,12 +1,18 @@
 #ifndef MATRIZ_H
 #define MATRIZ_H
 
+// Reorganizei as definições para corrigir o erro
+
 typedef struct Node {
     int coluna;
     int valor;
     struct Node* proximo;
     struct Node* anterior;
 } Node;
+
+typedef struct {
+    Node* cabeca;
+} Linha;
 
 typedef struct {
     int linhas;
